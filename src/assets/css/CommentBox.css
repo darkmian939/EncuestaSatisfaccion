@@ -1,0 +1,187 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../img/Fondo22.jpg'); /* Ruta a tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.comment-box-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgb(255, 0, 242), 0 6px 20px rgb(162, 0, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px; /* Ajusta el margen superior según sea necesario */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.logo {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #6a0dad;
+  margin: 0;
+}
+
+.titleN2 {
+  color: #6a0dad;
+  margin: 0;
+  font-size: 35px;
+  text-align: center;
+}
+
+.favorite-parking {
+  display: flex;
+  flex-direction: column;
+  color: #6a0dad;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.parking {
+  padding: 8px;
+  border: 1px solid #7800bd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.parking.selected {
+  background-color: #6a0dad;
+  color: #ffffff;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.star-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ddd;
+  font-size: 24px;
+  margin: 0 4px;
+}
+
+.star-button.selected,
+.star-button:hover {
+  color: #6a0dad;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 16px;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.textarea:disabled {
+  background: #f5f5f5;
+}
+
+.submit-button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.submit-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.confirmation-message {
+  color: #6a0dad;
+  margin-top: 16px;
+}
+
+/* Estilos para el navbar */
+.navbar-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo-comment {
+  max-width: 100px;
+  height: 80px;
+}
+
+.navbar-links-comment {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-links-comment a,
+.navbar-links-comment button {
+  margin-left: 20px;
+  font-size: 1rem;
+  color: var(--color-texto);
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-links-comment a:hover,
+.navbar-links-comment button:hover {
+  color: var(--color-secundario);
+  transform: scale(1.05);
+}
+
+.navbar-links-comment a {
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links-comment a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+

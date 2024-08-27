@@ -1,0 +1,51 @@
+
+.navbar-custom {
+  transition: background-color 0.3s, padding 0.3s;
+}
+
+.navbar-custom.scrolled {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-custom .logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-custom .toggle-icon {
+  color: #6a0dad;
+}
+
+.navbar-custom .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-custom .navbar-link {
+  color: #333;
+  padding: 0 15px;
+  text-decoration: none;
+}
+
+.navbar-custom .navbar-link:hover {
+  color: #6a0dad;
+}
+
+.navbar-custom .navbar-link.active {
+  font-weight: bold;
+  color: #6a0dad;
+}
+
+@media (max-width: 768px) {
+  .navbar-custom .nav-links {
+    display: none;
+  }
+}

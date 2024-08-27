@@ -1,0 +1,73 @@
+.map-container {
+    background-image: url('../img/banner-bg.png'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Para cubrir todo el contenedor */
+    background-position: center; /* Para centrar la imagen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Agrega un poco de padding para que no se pegue a los bordes */
+    color: white; /* Cambia el color del texto a blanco */
+  }
+  
+  .map-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .reservation-form {
+    margin-top: 40px;
+    width: 100%; /* Ajusta el ancho máximo del formulario según sea necesario */
+    max-width: 600px; /* Establece un ancho máximo para el formulario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reservation-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white; /* Asegura que el color del título sea blanco */
+  }
+  
+  .reservation-form form {
+    width: 80%; /* Asegura que el formulario ocupe el 80% del contenedor */
+    text-align: center; /* Centra el texto dentro del formulario */
+  }
+  
+  .reservation-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: left; /* Mantiene las etiquetas alineadas a la izquierda */
+  }
+  
+  .reservation-form input,
+  .reservation-form button {
+    width: 100%;
+    padding: 12px; /* Aumenta un poco el padding para mejorar la apariencia */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
+  }
+  
+  .reservation-form input {
+    color: black; /* Mantén el color del texto del input en negro para legibilidad */
+  }
+  
+  .reservation-form button {
+    background-color: #6c5ce7; /* Cambia el color del botón a morado oscuro */
+    color: #fff; /* Color del texto */
+    border: none;
+    cursor: pointer;
+    text-align: center; /* Centra el texto dentro del botón */
+  }
+  
+  .reservation-form button:hover {
+    background-color: #4834d4; /* Cambia el color del botón a un tono más oscuro al pasar el ratón */
+  }
+  
+  .popover-content {
+    z-index: 50;
+    max-width: none;
+  }
+  

@@ -1,0 +1,80 @@
+.comments-container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Color de fondo para el contenedor */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    position: relative; /* Posición relativa para poder posicionar el fondo */
+    overflow: hidden; /* Oculta cualquier desbordamiento de contenido */
+  }
+  
+  .comments-page {
+    text-align: center; /* Centra el contenido en el contenedor */
+  }
+  
+  .comment {
+    width: calc(50% - 20px); /* Ancho del comentario, considerando el margen entre ellos */
+    margin: 0 auto 20px; /* Margen inferior para separar los comentarios */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff; /* Fondo blanco para cada comentario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .comment-user {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333; /* Color de usuario más oscuro */
+  }
+  
+  .comment-rating {
+    display: flex;
+    align-items: center;
+    color: #f39c12; /* Color naranja para la calificación */
+  }
+  
+  .star-rating {
+    font-size: 1.2rem;
+    color: #1e1d1c; /* Color naranja para las estrellas */
+  }
+  
+  .star-rating span {
+    margin-right: 3px;
+  }
+  
+  .comment-text {
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+  
+  .loading-text {
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+  }
+  
+  .comments-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/city2.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    opacity: 0.3; /* Opacidad de la imagen de fondo */
+    z-index: -1; /* Asegura que la imagen de fondo esté detrás de los comentarios */
+  }
+  

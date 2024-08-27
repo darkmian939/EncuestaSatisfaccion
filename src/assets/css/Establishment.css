@@ -1,0 +1,110 @@
+.navbar-establishment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-logo-establishment {
+    max-width: 100px;
+    height: 80px;
+  }
+  
+  .navbar-links-establishment {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .navbar-links-establishment a,
+  .navbar-links-establishment button {
+    margin-left: 20px;
+    font-size: 1rem;
+    color: var(--color-texto);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .navbar-links-establishment a:hover,
+  .navbar-links-establishment button:hover {
+    color: var(--color-secundario);
+    transform: scale(1.05);
+  }
+  
+  .navbar-links-establishment a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-links-establishment a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+
+
+.container-establishment {
+    background-color: #f0f0f0; /* Color de fondo más claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif; /* Tipo de letra */
+    text-align: center; /* Centrar el contenido */
+  }
+  
+  .h1-establishment {
+    text-align: center;
+    color: #333; /* Color del título */
+    font-size: 1.5rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .subtitle-establishment {
+    color: #761868; /* Color del texto del subtítulo */
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+  
+  .label-establishment {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555; /* Color del texto del label */
+  }
+  
+  .input-establishment,
+  .button-establishment {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif; /* Tipo de letra */
+  }
+  
+  .button-establishment {
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-establishment:hover {
+    background-color: #50083f;
+  }
+  

@@ -1,0 +1,71 @@
+.body-login {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../../assets/img/abstract-cloud-purple-haze.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.paper {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: white; /* Fondo blanco */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de flotación */
+}
+
+.avatar {
+  margin: 8px;
+  background-color: #f50057;
+}
+
+.form {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.textField .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #6200ea; /* Color morado al enfocar el campo */
+}
+
+.textField .MuiInputLabel-root.Mui-focused {
+  color: #6200ea; /* Color de la etiqueta al enfocar */
+}
+
+.submit {
+  margin: 24px 0 16px;
+  font-size: 20px;
+  background-color: #6200ea !important; /* Color morado con !important */
+  color: white;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.forgot-password {
+  color: rgba(0, 0, 0, 0.5); /* Color gris opaco */
+}
+
+.sign-up-link {
+  color: #401c72d2;
+  opacity: 0.7; /* Opacidad para que no se vean mucho */
+}
+
+.forgot-password:hover,
+.sign-up-link:hover {
+  color: #401c72;
+  opacity: 1; /* Opacidad completa al pasar el ratón */
+}

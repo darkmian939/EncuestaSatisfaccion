@@ -1,0 +1,191 @@
+/* Reset de estilos y variables globales */
+
+
+:root {
+  --color-primario: #6f42c1; /* Color morado principal */
+  --color-secundario: #dd00ff; /* Color azul secundario */
+  --color-fondo: #f8f9fa; /* Color de fondo */
+  --color-texto: #7f4c9d; /* Color de texto principal */
+}
+
+.navbar-logo {
+  max-width: 100px; /* Ancho máximo del logo */
+  height: 80px; /* Altura ajustada automáticamente */
+}
+
+/* Estilos del navbar principal */
+/* Estilos del navbar principal */
+/* Estilos del navbar principal */
+.navbar.navbar-register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Ajuste del padding para hacer el navbar más delgado */
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente negro */
+  position: relative;
+  z-index: 1; /* Asegura que el navbar esté por encima del contenido */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Borde inferior ligero */
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  color: var(--color-primario); /* Color morado principal */
+  font-family: 'Roboto', sans-serif; /* Tipo de letra */
+  font-weight: bold; /* Añadido para hacer el logo más destacado */
+  text-transform: uppercase; /* Texto en mayúsculas para un estilo más moderno */
+}
+
+.navbar-links.navbar-links-register {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Empuja los enlaces al lado derecho */
+}
+
+.navbar-links.navbar-links-register a,
+.navbar-links.navbar-links-register button {
+  margin-left: 20px;
+  font-size: 1rem;
+  color: var(--color-texto); /* Color de texto principal */
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease; /* Transición de color y escala */
+  text-align: center; /* Centrar texto */
+  font-family: 'Roboto', sans-serif; /* Tipo de letra */
+}
+
+.navbar-links.navbar-links-register a:hover,
+.navbar-links.navbar-links-register button:hover {
+  color: var(--color-secundario); /* Color azul secundario al hacer hover */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+.navbar-links.navbar-links-register a {
+  padding: 10px 15px; /* Añadir padding para hacer los enlaces más grandes */
+  border-radius: 5px; /* Bordes redondeados para los enlaces */
+  transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.navbar-links.navbar-links-register a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente al hacer hover */
+}
+body {
+  background-image: url('../img/banner-bg.png'); /* Añade la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el área */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos específicos para la página de reserva */
+.Reserve {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-texto);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--color-fondo);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative; /* Añadido para controlar la posición de .background-image */
+}
+
+.main-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--color-primario);
+  text-align: center; /* Centrar el título */
+}
+
+.map-container {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-top: 20px;
+}
+
+.info-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--color-primario);
+}
+
+.info-box p {
+  color: var(--color-texto); /* Cambiar el color del texto de las tarifas a negro */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type='date'],
+input[type='time'],
+select,
+input[type='number'],
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  appearance: auto;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--color-primario);
+  color: #fff;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Aumentado el espacio entre botones */
+  display: block; /* Cambiado a block para ocupar el ancho completo */
+  width: 20%; /* Ancho completo */
+}
+
+button:hover {
+  background-color: var(--color-secundario);
+}
+
+button[type='submit'] {
+  margin-top: 20px; /* Aumentado el espacio entre botones */
+  display: block; /* Cambiado a block para ocupar el ancho completo */
+  width: 20%; /* Ancho completo */
+}
+
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 2rem;
+  }
+}

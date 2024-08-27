@@ -1,0 +1,103 @@
+
+.profile-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #4A148C; /* Fondo general de la página */
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffffe1; /* Color de la barra lateral */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(255, 255, 255, 0.534);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .profile-pic img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.sidebar h2 {
+  color: #b40bf7; /* Un color morado más claro y brillante */
+  margin: 10px 0;
+  font-size: 24px; /* Aumenta el tamaño de la fuente */
+  font-weight: bold; /* Hace el texto más grueso */
+  text-shadow: 1px 1px 2px #ffffff; /* Añade una sombra para que resalte */
+}
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  background-color: #7B1FA2; /* Color de fondo de los elementos del menú */
+  margin: 5px 0;
+  text-align: center;
+  color: #FFFFFF; /* Color del texto de los elementos del menú */
+  border: 1px solid #FFFFFF; /* Borde blanco */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+  background-color: #6A1B9A; /* Color de fondo al pasar el mouse */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.content h1 {
+  color: #FFFFFF;
+}
+
+.profile-info,
+.reservation {
+  background-color: #6A1B9A; /* Color de fondo de las secciones de contenido */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #FFFFFF; /* Borde blanco */
+}
+
+.profile-info img,
+.reservation img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.favorite-parking {
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite-parking .parking {
+  margin: 10px;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.favorite-parking .parking p {
+  color: #FFFFFF;
+  margin-top: 10px;
+  background-color: #7B1FA2; /* Fondo de los nombres de parqueaderos */
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF; /* Borde blanco */
+}
